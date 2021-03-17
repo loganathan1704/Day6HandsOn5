@@ -1,0 +1,36 @@
+package com.hands5;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class Problem3 {
+
+	public static void main(String[] args) {
+		int n,count=0;
+		String s1;
+		Scanner s=new Scanner(System.in);
+		n=s.nextInt();
+		ArrayList<String> list=new ArrayList<>(n);
+		
+		for(int i=0;i<n;i++) {
+			list.add(s.nextLine());
+		}
+        s1=s.nextLine();
+		count=Collections.frequency(list, s1);
+		System.out.println(count);
+	}
+
+	}
+/*Output:
+8
+M.A. Chidambaram Stadium
+M.A. Chidambaram Stadium
+M.A. Chidambaram Stadium
+M. Chinnaswamy Stadium
+Wankhede Stadium
+Eden Gardens
+M.A. Chidambaram Stadium
+
+M.A. Chidambaram Stadium
+4    */
